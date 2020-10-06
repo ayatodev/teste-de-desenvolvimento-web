@@ -1,11 +1,7 @@
-#
 # RedFox
 # teste de desenvolvimento web
-#
 
-#
 # como funciona o projeto?
-#
 
 Antes de tudo, queria dizer que o projeto ficou bem simples, eu dei meu máximo pra entregar o que a RedFox pediu, mas não saiu do jeito que eu queria, até porque não tive muito tempo pra fazer, eu precisava de mais tempo.
 
