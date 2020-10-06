@@ -1,58 +1,24 @@
-# Teste de Desenvolvimento Web
+#
+# RedFox
+# teste de desenvolvimento web
+#
 
-Olá Dev! Tudo bem?
+#
+# como funciona o projeto?
+#
 
-A RedFox está sempre em busca de profissionais interessantes e interessados, com boa capacidade de aprendizado, adaptação e principalmente motivação!
+Antes de tudo, queria dizer que o projeto ficou bem simples, eu dei meu máximo pra entregar o que a RedFox pediu, mas não saiu do jeito que eu queria, até porque não tive muito tempo pra fazer, eu precisava de mais tempo.
 
-Este teste tem como objetivo avaliar e desafiar você. Não é obrigatório realizá-lo completamente, queremos apenas conhecer você, seu esforço e potencial para aprender, se adaptar e tomar decisões.
+No layout, utilizei o framework Bootstrap.
+No front-end, sei que pediram pra não usar jQuery, mas foi minha única opção. Eu sei um pouquinho sobre React, mas não consegui fazer a mesma coisa que fiz com o jQuery.
+No back-end, não utilizei Node.js, não tenho conhecimento do mesmo.
 
-Agora vamos ao teste!
+Como eu disse no início, o projeto ficou bem simples. O usuário pesquisa o nome do pokémon, e o site retorna o resultado da pesquisa; fiz isso com JavaScript utilizando uma função com 8 variáveis. Caso o usuário pesquise uma informação que não existe, o site não irá retornar nenhum resultado.
 
+Para pegar os dados dos pokémons, utilizei o arquivo do Excel e salvei com o formato .csv, usei um site pra converter os dados (csvtojson.com) de um arquivo .csv para JSON, copiei o arquivo JSON e joguei dentro de uma tag script lendo o documento e armazenando os dados em uma variável com o nome de "data".
 
-## Desafio Pokémon
+Personalizei as tabelas utilizando as tables do Bootstrap. E usei uma input do Bootstrap para personalizar a caixa de pesquisa também.
 
-Nós temos um problema, atualmente nosso sistema é só um excel, cheio de informações sobre Pokémon. Nós usamos ele como banco de dados e ao mesmo tempo interface de gerenciamento, inserindo, editando, deletando e filtrando os dados.
+Utilizei uma forma de pesquisa automática, cada letra que o usuário digitar, a função searchFunction() será chamada para fazer a pesquisa do pokémon para o usuário.
 
-A missão é criar um sistema para substituir este excel, pois queremos expandir e acrescentar funcionalidades. Queremos manter o básico, mas principalmente queremos uma forma prática e agradável de buscar os dados, com listagem, filtros, paginação e detalhes sobre cada Pokémon.
-
-Fique à vontade com o layout, precisamos de uma interface que consiga entregar as funcionalidades principais e substituir o excel, só isso.
-
-
-## Consigo fazer tudo isso?
-
-Consegue sim!
-
-O teste é flexível, você pode escolher alguma parte específica dele para fazer, em que se sinta mais confortável e confiante, por exemplo: a interface, as funcionalidades, o banco de dados, etc...O importante é tentar atingir o objetivo de alguma forma.
-
-Aqui na RedFox queremos aproveitar ao máximo suas habilidades e aptidões, mas também desafiar você a adquirir novas, então nossa equipe tem a liberdade de trasitar entre frontend, backend, infraestrutura, etc...Sem se restringir, tudo depende do esforço e vontade de cada um.
-
-
-## Por onde começo?
-
-Primeiramente, você pode fazer um fork desse repositório aqui, para sua conta do Github, depois disso crie uma branch nova com o seu nome, para podermos indentificá-lo.
-
-Após terminar o desafio, você pode solicitar um pull request para a branch master do nosso repositório. Vamos receber e fazer a avaliação de todos.
-
-
-## E o Layout??
-
-Fique a vontade quanto a isso, não vamos avaliar o design da sua interface. Se quiser desenhar algo bacana, diferente, pensar até em UI/UX, etc...é claro que vamos valorizar o seu esforço e considerar como um diferencial, mas não se preocupe. 
-
-
-## Regras
-
-Para o desafio ficar mais interessante, decidimos criar algumas regras:
-- No layout, deve utilizar algum framework CSS (ex: Bootstrap, MaterializeCSS, Bulma...)
-- No frontend, deve utilizar algum framework JS (ex: VueJS, ReactJS, Angular...tente não usar jQuery)
-- No backend, deve utilizar NodeJS
-- Documentar um pouco o projeto, o que você fez e de que forma devemos executar-lo
-
-
-## Só isso?
-
-Só!...mas se quiser ir além, tente preparar o projeto para ser executado de maneira simples e prática, se coloque no lugar de alguém com menos conhecimentos, que precisa ver o que você desenvolveu. 
-
-ps: Se fizer deploy em algum servidor ou utilizar alguma ferramenta que facilite a execução (ex: docker), será um diferencial.
-
-
-Boa sorte! (^_^)
+A função searchFunction() realiza as pesquisas de acordo com o nome dos pokémons. Exemplo: caso você digite 3 letras de um nome de um pokémon, se houver outro pokémon que tenha as mesmas 3 letras, o site irá retornar os 2 pokémons e assim em diante.
